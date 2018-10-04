@@ -1,0 +1,14 @@
+<p>
+  <app-message></app-message>
+</p>
+<p>
+  Email 55 : <input class="form-control" [(ngModel)]="email" >
+</p>
+
+<p>
+  Password : <input type="password" class="form-control" [(ngModel)]="password">
+</p>
+
+<p>
+  <button class="btn btn-primary" (click)="checkLogin()" [disabled]="btnEnabled">Login</button>
+</p>

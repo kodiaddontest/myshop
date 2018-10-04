@@ -1,0 +1,36 @@
+<div class="row">
+<div class="col-lg-4" *ngFor="let x of products">
+    <article class="material-card Red">
+        <h2>
+            <span>{{x.title}}</span>
+            <strong>
+                <i class="fa fa-fw fa-star"></i>
+                {{x.price | currency}}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-sm btn-success">
+                    Add To Cart
+                </button>
+            </strong>
+        </h2>
+        <div class="mc-content">
+            <div class="img-container">
+                <a [routerLink]="['product_details',x._id]">
+                <img class="img-responsive"
+                 [src]="x.image">
+                </a>
+            </div>
+            <div class="mc-description">
+            {{x.price}}    
+            
+            </div>
+        </div>
+        <a class="mc-btn-action">
+            <i class="fa fa-bars">+</i>
+        </a>
+        <div class="mc-footer">
+            <h4>
+                
+            </h4>
+        </div>
+    </article>
+</div>
+</div>

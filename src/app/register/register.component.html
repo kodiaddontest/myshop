@@ -1,0 +1,22 @@
+<p>
+  <app-message></app-message>
+</p>
+<p>
+  Name : <input class="form-control" [(ngModel)]="name">
+</p>
+<p>
+  Email : <input type="email" class="form-control" [(ngModel)]="email">
+</p>
+<p>
+  Picture : <input type="text" class="form-control" [(ngModel)]="picture">
+</p>
+<p>
+password : <input type="password" class="form-control" [(ngModel)]="password">
+</p>
+<p>
+  Retype Password : <input type="password" class="form-control" [(ngModel)]="password1">
+</p>
+
+<p>
+  <button class="btn btn-primary" [disabled]="btnDisabled" (click)="register()">Save</button>
+</p>
